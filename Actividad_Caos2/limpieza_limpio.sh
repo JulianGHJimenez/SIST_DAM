@@ -12,7 +12,7 @@ echo "Carpetas creadas y permisos asignados"
 for file in *.txt; do
     if [ -f "$file" ] && [ ! -s "$file" ]; then
         echo "Moviendo archivo vacío: $file"
-        mv -f "$file" VACIOS/
+        rm -f "$file" VACIOS/
     fi
 done
 
@@ -20,7 +20,7 @@ done
 for file in *.odt *.docx; do
     if [ -f "$file" ]; then
         echo "Moviendo archivo a DOCS: $file"
-        mv -f "$file" DOCS/
+        rm -f "$file" DOCS/
     fi
 done
 
@@ -29,7 +29,7 @@ done
 for file in *.txt; do
     if [ -f "$file" ]; then
         echo "Moviendo archivo a TXTS: $file"
-        mv -f "$file" TXTS/
+        rm -f "$file" TXTS/
     fi
 done
 
@@ -38,7 +38,7 @@ done
 for file in *.jpg *.png *.gif; do
     if [ -f "$file" ]; then
         echo "Moviendo imagen a IMGS: $file"
-        mv -f "$file" IMGS/
+        rm -f "$file" IMGS/
     fi
 done
 
@@ -46,7 +46,7 @@ done
 for file in *.pdf; do
     if [ -f "$file" ]; then
         echo "Moviendo archivo a PDFS: $file"
-        mv -f "$file" PDFS/
+        rm -f "$file" PDFS/
     fi
 done
 
