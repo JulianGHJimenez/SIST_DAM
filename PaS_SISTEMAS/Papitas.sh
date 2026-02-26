@@ -1,3 +1,0 @@
-#!/esr/bin/bash 
-
-
